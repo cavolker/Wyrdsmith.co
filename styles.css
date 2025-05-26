@@ -1,0 +1,88 @@
+body {
+				margin: 0;
+				font-family: "Playfair Display", serif;
+				background-color: #052e16;
+				color: #fdf6e3;
+			}
+
+			nav {
+				background-color: #052e16;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 1000;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			}
+
+			.nav-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1rem 2rem;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.logo {
+				height: 40px;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav-links a {
+				text-decoration: none;
+				color: #fdf6e3;
+				font-size: 1rem;
+				transition: color 0.3s;
+			}
+
+			.nav-links a:hover {
+				color: #d4af7f;
+			}
+
+			.contact-btn {
+				background-color: #fdf6e3;
+				color: #052e16;
+				padding: 0.5rem 1rem;
+				border-radius: 5px;
+				font-weight: bold;
+			}
+
+			.menu-toggle {
+				display: none;
+				background: none;
+				border: none;
+				font-size: 1.5rem;
+				color: #fdf6e3;
+				cursor: pointer;
+			}
+
+			.mobile-menu {
+				display: none;
+				flex-direction: column;
+				background-color: #052e16;
+				padding: 1rem;
+				position: absolute;
+				top: 64px;
+				width: 100%;
+			}
+
+			.mobile-menu a {
+				margin: 0.5rem 0;
+			}
+
+			@media (max-width: 768px) {
+				.nav-links {
+					display: none;
+				}
+				.menu-toggle {
+					display: block;
+				}
+				.mobile-menu.show {
+					display: flex;
+				}
+			}
