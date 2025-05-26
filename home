@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wyrdsmith & Co.</title>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<nav>
+			<div class="nav-container">
+				<img src="logo.png" alt="Wyrdsmith & Co." class="logo" />
+				<div class="nav-links">
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#services">Services</a>
+					<a href="#portfolio">Portfolio</a>
+					<a href="#blog">Wyrd Notes</a>
+					<a href="#contact" class="contact-btn">Contact</a>
+				</div>
+				<button class="menu-toggle" id="menuToggle">☰</button>
+			</div>
+			<div class="mobile-menu" id="mobileMenu">
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#services">Services</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#blog">Wyrd Notes</a>
+				<a href="#contact" class="contact-btn">Contact</a>
+			</div>
+		</nav>
+
+		<script>
+			const menuToggle = document.getElementById("menuToggle");
+			const mobileMenu = document.getElementById("mobileMenu");
+
+			menuToggle.addEventListener("click", () => {
+				mobileMenu.classList.toggle("show");
+			});
+		</script>
+	</body>
+</html>
